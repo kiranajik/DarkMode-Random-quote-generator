@@ -74,3 +74,9 @@ function countDown() {
         }
     }, 1000);
 }
+
+function wp() {
+    var msg =
+
+        window.open('https://api.whatsapp.com/send?text="' + $(".quote").text() + '"____get your quote @' + document.URL);
+}

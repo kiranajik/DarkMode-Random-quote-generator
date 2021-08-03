@@ -32,12 +32,6 @@ html {
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 640px) {
-    .quote {
-        font-size: 1rem;
-    }
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -105,6 +99,8 @@ img {
     position: absolute;
     top: 5%;
     right: 0;
+    margin-right: -40px;
+    display: flex;
 }
 
 .switch {
@@ -333,10 +329,8 @@ img {
 }
 
 #full {
-    position: absolute;
-    margin: auto;
-    top: 7.3%;
-    right: 35%;
+    margin-top: 10px;
+    margin-right: 5px;
     -webkit-animation: vibrate-1 0.7s linear infinite both;
     animation: vibrate-1 0.7s linear infinite both;
 }
@@ -460,5 +454,36 @@ polyline {
     100% {
         -webkit-transform: translate(0);
         transform: translate(0);
+    }
+}
+
+body {
+    background: #222
+}
+
+.whatsapp-ico {
+    fill: white;
+    position: absolute;
+    left: -50%;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+    z-index: 100;
+}
+
+.whatsapp-ico:hover {
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 900px) {
+    .quote {
+        font-size: 1rem;
+    }
+    .whatsapp-ico {
+        left: -150%;
     }
 }
